@@ -20,6 +20,24 @@ package nowCoder.algorithm.bit;
  */
 public class Add {
 	
+	/**
+	 * 不引入新变量，交换两个变量的值
+	 * @param m
+	 * @param n
+	 */
+	public void swap(int m, int n){
+		m = m + n;
+		n = m - n;
+		m = m - n;
+		
+		/**
+		 * 或者采用异或
+		 */
+		m = m ^ n;//相同为0，不同为1
+		n = m ^ n;// m ^ n ^ n  就是m
+		m = m ^ n;// m ^ n ^ m  就是n
+	}
+	
 	public int Add(int num1, int num2) {
         int sum, carry;
         do {
@@ -34,7 +52,7 @@ public class Add {
     }
 	public static void main(String[] args) {
 		Add add = new Add();
-		int i = add.Add(-1, -3);
+		int i = add.Add(-1, 0);
 		System.out.println(i);
 	}
 }
