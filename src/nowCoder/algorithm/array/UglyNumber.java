@@ -8,7 +8,6 @@ package nowCoder.algorithm.array;
  * 如果一个数能被2整除，就把他连续除2，  3，5同理
  * 最后如果得到1，则是丑数
  * @author snow
- *
  */
 public class UglyNumber {
 	
