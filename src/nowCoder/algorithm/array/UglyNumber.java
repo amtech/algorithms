@@ -10,7 +10,6 @@ package nowCoder.algorithm.array;
  * @author snow
  */
 public class UglyNumber {
-	
 	/**
 	 * 法1：丑数只能被2，3，5整除
 	 * 如果一个数能被2整除，就把他连续除2，  3，5同理
